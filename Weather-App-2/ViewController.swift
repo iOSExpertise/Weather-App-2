@@ -255,7 +255,7 @@ class ViewController: UIViewController,
         // 5 Set delegate and authorization
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization() //.requestAlwaysAuthorization()
     }
 
     override func didReceiveMemoryWarning() {
